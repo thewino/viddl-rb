@@ -5,7 +5,7 @@ module ViddlRb
   # This class is responsible for extracting audio from video files using ffmpeg.
   class AudioHelper
 
-    def self.extract(file_path, save_dir, file_name)
+    def self.extract(file_path, save_dir)
       no_ext_filename = file_path.split('.')[0..-1][0]
       #capture stderr because ffmpeg expects an output param and will error out
       puts "Gathering information about the downloaded file."
