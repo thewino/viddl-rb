@@ -1,3 +1,4 @@
+require 'open3'
 
 # Downloader iterates over a download queue and downloads and saves each video in the queue.
 class Downloader
