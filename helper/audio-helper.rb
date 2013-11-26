@@ -1,3 +1,5 @@
+require 'open3'
+
 module ViddlRb
 
   # This class is responsible for extracting audio from video files using ffmpeg.
