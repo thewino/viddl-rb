@@ -12,6 +12,10 @@ require "stringio"
 require "download-helper.rb"
 require "plugin-helper.rb"
 require "utility-helper.rb"
+require "driver.rb"
+require "downloader.rb"
+require "parameter-parser.rb"
+require "audio-helper.rb"
 
 #load all plugins
 ViddlRb::UtilityHelper.load_plugins
