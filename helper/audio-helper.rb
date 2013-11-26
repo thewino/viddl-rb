@@ -13,7 +13,8 @@ module ViddlRb
       puts "Done gathering information about the downloaded file."
 
       if !file_info.to_s.empty?
-        audio_format_matches = file_info.match(/Audio: (\w*)/)
+        #audio_format_matches = file_info.match(/Audio: (\w*)/)
+        audio_format_matches = file_info.match(/Audio: ([a-zA-z0-9]+) /)
         if audio_format_matches
           audio_format = audio_format_matches[1]
           puts "detected audio format: #{audio_format}"
